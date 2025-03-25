@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
 
     if (!id) {
       return NextResponse.json(
-        { message: "Unauthorized User" },
+        { success: false, message: "Unauthorized User" },
         { status: 400 }
       );
     }
